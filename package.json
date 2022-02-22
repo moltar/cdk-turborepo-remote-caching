@@ -2,7 +2,7 @@
   "name": "cdk-turborepo-remote-caching",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rf/cdk-turborepo-remote-caching.git"
+    "url": "https://github.com/moltar/cdk-turborepo-remote-caching.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -40,7 +40,7 @@
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
+    "aws-cdk-lib": "2.13.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -60,7 +60,7 @@
     "typescript": "^4.5.5"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.1.0",
+    "aws-cdk-lib": "^2.13.0",
     "constructs": "^10.0.5"
   },
   "keywords": [
