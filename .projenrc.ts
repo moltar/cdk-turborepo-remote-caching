@@ -8,11 +8,17 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'cdk-turborepo-remote-caching',
   projenrcTs: true,
   repositoryUrl: 'https://github.com/moltar/cdk-turborepo-remote-caching.git',
-
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  devDeps: ['aws-cdk'],
 });
+
+project.addTask('deploy', {
+  exec: 'npx cdk deploy -a "npx ts-node -P tsconfig.dev.json --prefer-ts-exts src/turborepo-remote-caching.integ.ts"',
+});
+
+project.addTask('destroy', {
+  exec: 'npx cdk destroy -a "npx ts-node -P tsconfig.dev.json --prefer-ts-exts src/turborepo-remote-caching.integ.ts"',
+});
+
+project.gitignore.addPatterns('cdk.out/');
 
 project.synth();
