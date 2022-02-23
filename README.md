@@ -2,7 +2,7 @@
 
 > CDK Construct for Turborepo remote cache server.
 
-!! ⚠️ There is no authentication (yet) and the server is wide open ⚠️ !!
+⚠️ **There is no authentication (yet) and the server is wide open.** ⚠️
 
 This solution provides API Gateway (v1) that implements the Turborepo remote caching API interface
 and S3 bucket for storing the cache artifacts.
