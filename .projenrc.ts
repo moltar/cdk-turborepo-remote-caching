@@ -9,6 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   projenrcTs: true,
   repositoryUrl: 'https://github.com/moltar/cdk-turborepo-remote-caching.git',
   devDeps: ['aws-cdk'],
+  depsUpgrade: false,
 });
 
 project.addTask('deploy', {
