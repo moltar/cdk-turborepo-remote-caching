@@ -13,7 +13,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
 });
 
 project.addTask('deploy', {
-  exec: 'npx cdk deploy -a "npx ts-node -P tsconfig.dev.json --prefer-ts-exts src/turborepo-remote-caching.integ.ts"',
+  exec: 'npx cdk deploy --require-approval=never -a "npx ts-node -P tsconfig.dev.json --prefer-ts-exts src/turborepo-remote-caching.integ.ts"',
 });
 
 project.addTask('destroy', {
