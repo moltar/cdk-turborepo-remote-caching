@@ -51,6 +51,7 @@
     "jsii": "^1.54.0",
     "jsii-diff": "^1.54.0",
     "jsii-docgen": "^6.1.11",
+    "jsii-pacmak": "^1.61.0",
     "json-schema": "^0.4.0",
     "projen": "^0.52.43",
     "standard-version": "^9",
