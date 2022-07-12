@@ -5,7 +5,7 @@ export class TurborepoRemoteCaching extends Construct {
   constructor(scope: Construct, id: string) {
     super(scope, id);
 
-    const storage = new aws_s3.Bucket(this, 'Storage', {
+    const storage = new aws_s3.Bucket(this, 'CacheArtifacts', {
       autoDeleteObjects: true,
       removalPolicy: RemovalPolicy.DESTROY,
       lifecycleRules: [
