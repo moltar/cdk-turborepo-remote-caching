@@ -7,12 +7,7 @@ const app = new App({
 
 const stack = new Stack(
   app,
-  TurborepoRemoteCaching.name, {
-    env: {
-      account: '708548510583',
-      region: 'eu-west-1',
-    },
-  },
+  TurborepoRemoteCaching.name,
 );
 
 new TurborepoRemoteCaching(stack, TurborepoRemoteCaching.name);
